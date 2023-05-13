@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float cus, fre, des, vend, luc;
+
+    
+    printf("Digite o custo da mercadoria: ");
+    scanf("%f", &cus);
+
+    
+    printf("Digite o valor do frete: ");
+    scanf("%f", &fre);
+    printf("Digite o valor das despesas eventuais: ");
+    scanf("%f", &des);
+
+   
+    printf("Digite o valor de venda: ");
+    scanf("%f", &vend);
+
+   
+    luc = ((vend - cus - fre - des) / cus) * 100;
+
+   
+    printf("\n");
+    printf("Custo: R$ %.2f\n", cus);
+    printf("Frete: R$ %.2f\n", fre);
+    printf("Despesas Eventuais: R$ %.2f\n", des);
+    printf("Valor de Venda: R$ %.2f\n", vend);
+    printf("Lucro: %.2f%%\n", luc);
+
+    return 0;
+}
