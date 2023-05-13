@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+#define litrosporlata 2.0
+#define consumodetinta 0.3 // 300 ml = 0.3 litros
+
+int main() {
+    float larg, alt, area, litrosdetinta, latasdetinta;
+
+    
+    printf("Digite a largura da parede em metros: ");
+    scanf("%f", &larg);
+    printf("Digite a altura da parede em metros: ");
+    scanf("%f", & alt);
+
+    
+    area = larg *  alt;
+
+    
+    litrosdetinta = area * consumodetinta;
+
+    
+    latasdetinta = ceil(litrosdetinta / litrosporlata);
+
+    
+    printf("serao necessarias %.0f latas de tinta.\n", latasdetinta);
+
+    return 0;
+}
+
